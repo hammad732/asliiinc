@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L,QSA]
+
+#hide a Specifuc File
+<Files "*">
+    Header set X-Robots-Tag "noindex, nofollow"
+</Files>
+
+<Files .env>
+order allow,deny
+Deny from all
+</Files>
+</IfModule>

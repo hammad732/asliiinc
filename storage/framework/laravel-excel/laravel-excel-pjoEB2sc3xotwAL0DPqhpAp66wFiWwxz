@@ -1,0 +1,5 @@
+"ID","EDIT","BLOCK","ROLE","NAME","EMAIL","PASSWORD","PHONE","COMPANY","COUNTRY","STATE","CITY","ADDRESS","ZIP CODE"
+"1","Edit","Unable to Block Super Admin","Super Admin","Super Admin","superadmin@gmail.com","2020am2020","03214420964","Asliimall","Pakistan","Punjab","LAHORE","123 Main St Lahore Pakistan","90001"
+"23","Edit","Block","User","Nadeem Jandrii","nadeemjandrii@gmail.com","2020am2020","2064841034","5onred","United States","Pennsylvania","New Holland","Main St New Holland PA","17963"
+"24","Edit","Block","Admin","Usman Awan","usmanaslamawan@gmail.com","2020ua2020","03214420964","5onred","Pakistan","Punjab","Lahore","pakistan","000059"
+"27","Edit","Block","Admin","Subha ALi","admin101@gmail.com","2022am2022","7868280056","Aslii","United States","Florida","Parkland","FL","33067"
