@@ -1435,7 +1435,7 @@ public function connect_delete($id)
 
         return view('frontend.services.allservices', compact('servicepage'));
     }
-    public function show_allservice(Request $request)
+     public function show_allservice(Request $request)
     {
 
         $servicepage = Service::where('type', 'Food Service')->get();
@@ -1469,7 +1469,9 @@ public function connect_delete($id)
     public function service_save(Request $request)
     {
         $this->validate($request, [
-            'image' => 'required|mimes:jpeg,png,jpg,gif,svg|dimensions:min_width=1600,min_height=400|dimensions:max_width=2500,max_height=1400',
+                        'image' => 'required|mimes:jpeg,png,jpg,gif,svg|',
+
+            // 'image' => 'required|mimes:jpeg,png,jpg,gif,svg|dimensions:min_width=1600,min_height=400|dimensions:max_width=2500,max_height=1400',
         ]);
         if ($request->hasFile('image')) {
             $image = $request->file('image');

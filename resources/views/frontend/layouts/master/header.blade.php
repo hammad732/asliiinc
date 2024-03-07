@@ -27,6 +27,11 @@
   .header-a-tag{
     margin: 10px 30px;
   }
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 12px 8px !important;
+}
 
   @media(min-width: 768px){
     .navigation-agileits{
@@ -131,9 +136,9 @@ align-items: center
               <a class="nav-link   {{ Request::is('home') ? 'active_nav' : '' }} "
                   href="{{ route('home') }}">Products</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link   {{ Request::is('singleservices') ? 'active_nav' : '' }} "
-                  href="{{ route('singleservices') }}">Services</a>
+          <li class="nav-item">
+              <a class="nav-link   {{ Request::is('allservices') ? 'active_nav' : '' }} "
+                  href="{{ route('singleservices') }}">Food Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link   {{ Request::is('singlefranchise') ? 'active_nav' : '' }} "

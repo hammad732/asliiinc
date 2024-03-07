@@ -1522,6 +1522,7 @@ ul.faq {
 .brands-w3l {
   text-align: center;
 }
+
 .brands-w3l p a {
   font-size: 17px;
   font-weight: 700;
@@ -2593,6 +2594,7 @@ h3.agileits-icons-title {
     margin: 0;
   }
 }
+
 @media (max-width: 640px) {
   .icon-box {
     float: left;
@@ -3089,6 +3091,7 @@ h3.agileits-icons-title {
     padding-left: 1em;
   }
 }
+
 @media (max-width: 600px) {
   #PPMiniCart form {
     width: 506px !important;
@@ -3116,7 +3119,9 @@ h3.agileits-icons-title {
     line-height: 6px;
   }
 }
+
 @media (max-width: 568px) {
+
   #PPMiniCart form {
     max-height: 100px !important;
   }
@@ -3889,7 +3894,15 @@ header .overlay {
    
   }
 }
-
+@media screen and (max-width: 620px) {
+.brands-w3l p a {
+    font-size: 15px; 
+    padding-left: 0;
+    padding-right: 0px;
+    text-align: center;
+}
+    
+}
 @media(max-width:450px){
   .available-div span{
     height: 30px !important;

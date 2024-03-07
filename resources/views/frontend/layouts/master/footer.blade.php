@@ -14,6 +14,16 @@
   background: #ff0000 !important;
   border: 1px solid #ff0000 !important;
 }
+#w3_agile_ebay:hover {
+  background: #ff0000 !important; /* eBay specific color */
+  border: 1px solid #ff0000 !important;
+}
+
+#w3_agile_shopify:hover {
+  background: #00ff00 !important; /* Shopify specific color */
+  border: 1px solid #00ff00 !important;
+}
+
 
 #w3_agile_amazon:hover {
   background: #FF9900 !important;
@@ -75,7 +85,7 @@
     <div class="footer-copy">
       <div class="container">
         <p>
-          {{ date('Y') }} All rights reserved <a href="https://asliiinc.com/">Asliiinc</a> | Designed by
+          2020 All rights reserved <a href="https://asliiinc.com/">Asliiinc</a> | Designed by
           <a href="https://edenspell.com/">Edenspell</a>
         </p>
       </div>
@@ -86,24 +96,30 @@
       <div class="w3layouts-foot">
         <ul>
           <li>
-            <a href="https://www.facebook.com/profile.php?id=61556916660599&mibextid=rS40aB7S9Ucbxw6v" class="w3_agile_facebook"><i class="fa-brands fa-facebook-f"></i>
+            <a href="https://www.facebook.com/Asliiincfacebookpage/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" class="w3_agile_facebook"><i class="fa-brands fa-facebook-f"></i>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/AsliiMall" class="agile_twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://twitter.com/asliiinc?s=21&t=GGqUo5IRWhyyOY5nPAVzLA" class="agile_twitter"><i class="fa-brands fa-x-twitter"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/asliiincinstapage?igsh=MXdob2tvczhtcjJ2eQ%3D%3D&utm_source=qr" class="w3_agile_dribble"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/asliiincinstapage/?igsh=MTljOGx0aGdqYXVkaw%3D%3D" class="w3_agile_dribble"><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/aslii-mall-865436232" class="w3_agile_vimeo"><i class="fa-brands fa-linkedin"></i></a>
           </li>
-          <li>
-            <a href="https://www.youtube.com/" class="w3_agile_vimeo" class="w3_agile_vimeo " id="w3_agile_youtube"><i class="fa-brands fa-youtube"></i></a>
+      <li>
+            <a href="https://www.ebay.com/usr/asliiinc" class="w3_agile_vimeo" class="w3_agile_vimeo " id="w3_agile_ebay"><i class="fa-brands fa-ebay"></i></a>
           </li>
-          <!--<li>-->
-          <!--  <a href="https://www.amazon.com/" class="w3_agile_vimeo" class="w3_agile_vimeo" id="w3_agile_amazon"><i class="fa-brands fa-amazon"></i></a>-->
-          <!--</li>-->
+           <li>
+            <a href="https://asliiinc.myshopify.com" class="w3_agile_vimeo" class="w3_agile_vimeo " id="w3_agile_shopify"><i class="fa-brands fa-shopify"></i></a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/" class="w3_agile_vimeo" class="w3_agile_vimeo" id="w3_agile_amazon"><i class="fa-brands fa-amazon"></i></a>
+          </li>
+            <li>
+            <a href="https://www.youtube.com/channel/UCn93fRTWXS-7X4SFcHqzZWA" class="w3_agile_vimeo" class="w3_agile_vimeo" id="w3_agile_youtube"><i class="fa-brands fa-youtube"></i></a>
+          </li>
         </ul>
       </div>
       {{-- <div class="payment-w3ls">

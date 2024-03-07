@@ -3,7 +3,7 @@
 
 <style>
 .img1 {
-    width: 80%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -25,13 +25,12 @@
 
 @section('content')
 
-
     <!-- ========== services-mid =========  -->
     <div class="services-mid">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 @foreach ($servicepage as $servicemid)
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 col-one mb-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12 col-one mb-5">
                         <h3 class="text-center title-text-aligment">{{$servicemid->heading}}</h3>
                         @if ($servicemid->custom_link!=null)
                             <a href="{{ $servicemid->custom_link }}">
