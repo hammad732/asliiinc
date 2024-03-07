@@ -58,11 +58,15 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                                         <label class="mt-1" for="type">Select type:</label>
                                         <select class="form-control" name="type" id="type" required>
+                                            <option value="" disabled>--- Select Service type ---</option>
                                             <option value="{{$service->type}}" selected>{{$service->type}}</option>
                                             @foreach ($types as $type)
-                                                <option value="{{$type->type}}">{{$type->type}}</option>
+                                                @if ($type->type != $service->type)
+                                                    <option value="{{$type->type}}">{{$type->type}}</option>
+                                                @endif
                                             @endforeach
                                         </select>
+
                                     </div>
 
 
@@ -110,10 +114,33 @@
     </div>
     <!-- /.content-wrapper -->
 
+    <a href="https://www.shopify.com/" class="sh-ic" id="w3_agile_shopify" role="button">
+        <img src="assets/svg/._shopify_glyph" alt="Shopify Logo" class="footer-social-icon"/>
+    </a>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-<script src="https://cdn.tiny.cloud/1/q7ow9ld171nez8h70is8pzhzafij2muj43b2p8bw5jbe6z4c/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+<!-- Place the first <script> tag in your HTML's <head> -->
+    <script src="https://cdn.tiny.cloud/1/ncyo2jku5rh1w0rsdj47n737v0cnqv5x23da2ey954y42feo/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+    <script>
+      tinymce.init({
+        selector: '#text',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+        tinycomments_mode: 'embedded',
+        tinycomments_author: 'Author name',
+        mergetags_list: [
+          { value: 'First.Name', title: 'First Name' },
+          { value: 'Email', title: 'Email' },
+        ],
+        ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+      });
+    </script>
+{{-- <script src="https://cdn.tiny.cloud/1/q7ow9ld171nez8h70is8pzhzafij2muj43b2p8bw5jbe6z4c/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 <script>
 
@@ -136,7 +163,7 @@
        menubar: 'favs file edit view insert format tools table help'
      });
    tinymce.activeEditor.execCommand('mceCodeEditor');
-</script>
+</script> --}}
 
 
 

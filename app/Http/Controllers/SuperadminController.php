@@ -1435,10 +1435,16 @@ public function connect_delete($id)
 
         return view('frontend.services.allservices', compact('servicepage'));
     }
-    public function show_allservice(Request $request, $type)
+    public function show_allservice(Request $request)
     {
 
-        $servicepage = Service::where('type', $type)->get();
+        $servicepage = Service::where('type', 'Food Service')->get();
+        return view('frontend.services.service_type', compact('servicepage'));
+    }
+    public function singlefranchise(Request $request)
+    {
+
+        $servicepage = Service::where('type', 'Franchise')->get();
         return view('frontend.services.service_type', compact('servicepage'));
     }
 
