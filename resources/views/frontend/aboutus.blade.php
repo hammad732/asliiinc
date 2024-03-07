@@ -158,7 +158,6 @@
   
 </style>
 
-
 @section('content')
     {{-- @dd($content); --}}
     @php

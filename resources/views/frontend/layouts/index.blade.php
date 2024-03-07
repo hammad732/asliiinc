@@ -7,6 +7,7 @@
 #brands_new{
     margin-top: 55px !important;
 }
+
 </style>
 @section('content')
 <!--slider -->

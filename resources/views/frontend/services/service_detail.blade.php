@@ -17,6 +17,7 @@
 
 @section('content')
 
+
     <!-- ========== single-service-banner =========  -->
     @if($singleservice)
 
@@ -37,8 +38,8 @@
         <div class="container">
             <div class="row one">
                 <div class="col-12">
-                    {{-- <p style="white-space: pre-wrap;">{!! strip_tags($singleservice->text) !!}</p> --}}
-                    <p>{!! Purifier::clean($singleservice->text, 'basic') !!}</p>
+                    {{-- <p style="white-space: pre-wrap;">{{$singleservice->text}}</p> --}}
+                                        <p>{!! Purifier::clean($singleservice->text, 'basic') !!}</p>
 
                 </div>
             </div>
