@@ -66,6 +66,10 @@ Route::get('/register', function () {
     return view('auth/register');
 })->name('register');
 
+Route::get('/service', 'SuperadminController@show_service_index')->name('sa.show.service_all');
+Route::get('/allservices', 'SuperadminController@show_allservice')->name('singleservices');
+Route::get('/singlefranchise', 'SuperadminController@singlefranchise')->name('singlefranchise');
+Route::get('/service_detail/{id}', 'SuperadminController@singleservices')->name('service_detail');
 // ================= GUEST ROUTES =================
 Route::get('/connect', 'UserController@connect')->name('connect');
 
@@ -218,9 +222,7 @@ Route::group(['middleware' => ['auth']], function () {
 
         //services
         Route::get('sa/show/service', 'SuperadminController@show_service')->name('sa.show.service');
-        Route::get('/service', 'SuperadminController@show_service_index')->name('sa.show.service_all');
-        Route::get('/allservices/{type}', 'SuperadminController@show_allservice')->name('singleservices');
-        Route::get('/service_detail/{id}', 'SuperadminController@singleservices')->name('service_detail');
+
         Route::get('service-create', 'SuperadminController@service_create')->name('service.create');
         Route::get('service-type-create', 'SuperadminController@service_type_create')->name('service-type.create');
         Route::post('service-save', 'SuperadminController@service_save')->name('service.save');

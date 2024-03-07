@@ -132,8 +132,12 @@ align-items: center
                   href="{{ route('home') }}">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link   {{ Request::is('services') ? 'active_nav' : '' }} "
-                  href="{{ route('sa.show.service_all') }}">Services</a>
+              <a class="nav-link   {{ Request::is('singleservices') ? 'active_nav' : '' }} "
+                  href="{{ route('singleservices') }}">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link   {{ Request::is('singlefranchise') ? 'active_nav' : '' }} "
+                  href="{{ route('singlefranchise') }}">Franchise</a>
             </li>
 
             <li class="nav-item">
